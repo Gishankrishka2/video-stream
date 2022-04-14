@@ -13,7 +13,7 @@ class Veez(object):
         admins = {}
         BOT_TOKEN = getenv("BOT_TOKEN", None)
         CHANNEL = int(os.getenv('CHANNEL', 123456))
-        API_ID = int(getenv("API_ID", "6"))
+        API_ID = int(os.environ.get("API_ID", 12345))
         API_HASH = getenv("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
         SESSION_NAME = getenv("SESSION_NAME", None)
         DURATION_LIMIT = int(getenv("DURATION_LIMIT", "15"))
